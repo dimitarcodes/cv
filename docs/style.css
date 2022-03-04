@@ -28,22 +28,55 @@ body {
     100%{background-position:0% 50%}
 }
 
+
+
 .hero{
     display:flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     height: 100vh;
     width: 100vw;
 }
 
-h1{
-    margin: 0;
-    padding: 0.5em;
+.intro{
+    display:flex;
+    flex-direction: column;
+    margin-right: 2em;
+    text-align: right;
+    padding: 0;
 }
 
-h2{
-    font-size: 1em;
-    margin: 0;
-    padding: 0.5em;
+h1{
+    margin-block: 0;
+    margin-bottom: 0.25em;
 }
+h2{
+    margin-block: 0;
+}
+
+
+.cv{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cvbox{
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-property: box-shadow;
+    width: 20em;
+    height: fit-content;
+    border-radius: 1em;
+    border-color: azure;
+    box-shadow: 0 0 5px whitesmoke;
+
+
+}
+.cvbox:hover{
+    /* transform: scale(1.1); */
+    box-shadow: 0 0 50px rgb(245, 203, 255);
+}
+  
